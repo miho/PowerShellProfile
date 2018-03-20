@@ -34,7 +34,7 @@ Function dev64 {
 #pushd "$env:VS140COMNTOOLS\..\..\VC"
 pushd "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools"
 # Call the .bat file to set the variables in a temporary cmd session and use 'set' to read out all session variables and pipe them into a foreach to iterate over each variable
-cmd /c "VsDevCmd.bat&set" | foreach {
+cmd /c "VsDevCmd.bat -arch=x64 & set" | foreach {
   # if the line is a session variable
   if( $_ -match "=" )
   {
