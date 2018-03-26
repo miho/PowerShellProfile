@@ -1,2 +1,2 @@
 # PowerShellProfile
-PowerShell replacements for 'du -h', vsvarsall.bat etc.
+PowerShell replacements for 'du -h', VsDevCmd.bat etc.
